@@ -1,0 +1,129 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Убедитесь, что модальное окно находится на переднем плане */
+}
+
+.modal-content {
+  background: white;
+  padding: 30px; /* Увеличил padding для большего пространства */
+  border-radius: 10px; /* Немного увеличил радиус скругления */
+  width: 400px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Увеличил тень для более четкого отделения от фона */
+  position: relative;
+  text-align: center; /* Центрирование текста внутри модального окна */
+}
+
+.close-button {
+  position: absolute;
+  top: 15px; /* Немного увеличил отступы от краев */
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333; /* Добавил цвет для кнопки закрытия */
+}
+
+.close-button:hover {
+  color: #000; /* Немного темнее при наведении */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Разделяет элементы формы */
+}
+
+label {
+  font-size: 1rem;
+  color: #333;
+  text-align: left; /* Выравнивание текста слева */
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #007BFF; /* Цвет границы при фокусе */
+  outline: none; /* Убирает стандартный outline браузера */
+}
+
+.password-container {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #007BFF; /* Цвет иконки переключения пароля */
+}
+
+.toggle-password:hover {
+  color: #0056b3; /* Цвет при наведении на иконку */
+}
+
+.login-button {
+  padding: 12px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+.forgot-password-link {
+  margin-top: 10px;
+  color: #007BFF;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.forgot-password-link:hover {
+  text-decoration: underline;
+}
+
+.signup-link {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.signup-link a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px; /* Добавлен небольшой отступ сверху */
+  text-align: left; /* Выравнивание ошибок по левому краю */
+}

@@ -1,0 +1,46 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--footer-background-color); /* Используем зелёный цвет из глобальных настроек */
+  color: white;
+  padding: 1rem;
+  box-sizing: border-box;
+  min-height: 110px;
+}
+
+footer p {
+  margin: 0;
+  padding-left: 20px; /* Отступ слева для параграфа */
+  color: white; /* Белый цвет текста */
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.footer-links {
+  text-align: center; /* Центрируем текст внутри блока */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 15px;
+}
+
+.footer-links a {
+  color: white; /* Белый цвет текста ссылок */
+  text-decoration: none; /* Убираем подчеркивание по умолчанию */
+  font-weight: normal;
+  margin: 0 15px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+.footer-links a:visited,
+.footer-links a:focus,
+.footer-links a:active {
+  color: white;
+  text-decoration: none;
+}

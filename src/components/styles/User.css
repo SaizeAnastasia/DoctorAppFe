@@ -1,0 +1,138 @@
+.user-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* height: 100vh; */
+    min-height: auto !important;
+    padding: 20px;
+    background-color: var(--background-color);
+}
+
+.user-info {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 30px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-info p,
+.user-info label {
+    width: 100%;
+    text-align: left;
+}
+
+.edit-button {
+    margin-right: 0;
+    align-self: center;
+    text-align: center;
+}
+
+.user-actions {
+    /* margin-top: 20px; */
+    display: flex;
+    justify-content: space-between; /* Кнопки заполняют всю ширину контейнера */
+    width: 100%; /* Заставляем кнопки заполнять весь контейнер */
+    max-width: 600px;
+    gap: 10px;
+}
+
+.user-actions button {
+    flex: 1; /* Кнопки занимают равное пространство */
+    padding: 10px; /* Сделаны более узкими */
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px var(--button-shadow-color);
+    transition: background-color 0.3s ease;
+    color: white;
+}
+
+.user-info label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.user-info input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.user-info p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.appointment-history {
+    list-style-type: none;
+    padding: 0;
+    /* margin-top: 20px; */
+    width: 100%;
+    max-width: 600px;
+}
+
+.appointment-history li, 
+.appointment-message {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.appointment-message {
+    justify-content: center;
+}
+
+.user-container h1, .user-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.edit-button, .save-button, .cancel-button, .logout-button, .delete-account-button {
+    background-color: var(--primary-color); /* Основной зелёный цвет */
+}
+
+.save-button {
+    background-color: var(--primary-color); /* Зелёный цвет соответствует основному стилю */
+}
+
+.cancel-button, .delete-account-button {
+    background-color: #8B0000; /* Тёмно-красный цвет для кнопок отмены и удаления аккаунта */
+}
+
+.logout-button {
+    background-color: var(--button-color); /* Стандартный цвет кнопок для выхода */
+}
+
+.edit-button:hover, .save-button:hover, .cancel-button:hover, .logout-button:hover, .delete-account-button:hover {
+    background-color: var(--button-hover-color); /* Единый цвет при наведении для всех кнопок */
+}
+
+.save-button:hover {
+    background-color: var(--button-hover-color); /* Более тёмный зелёный при наведении */
+}
+
+.cancel-button:hover, .delete-account-button:hover {
+    background-color: #660000; /* Более тёмный красный при наведении */
+}
+
+.logout-button:hover {
+    background-color: var(--button-hover-color); /* Соответствует общему стилю при наведении */
+}

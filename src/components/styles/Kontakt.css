@@ -1,0 +1,54 @@
+/* Kontakt.css */
+
+.kontakt-container {
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: flex-start; /* Смещение вверх по вертикали */
+    min-height: auto !important;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.kontakt-box {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.kontakt-box h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.kontakt-box p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.kontakt-box button {
+    padding: 10px 20px;
+    background-color: #2d666a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.kontakt-box button:hover {
+    background-color: #0056b3;
+}
+
+

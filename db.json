@@ -1,0 +1,36 @@
+{
+    "users": [],
+    "doctors": [
+      {
+        "id": 1,
+        "vorname": "Hans",
+        "name": "Müller",
+        "abteilung": "Allgemeinmedizin",
+        "ausbildung": "Medizinische Hochschule Hannover",
+        "berufserfahrung": "10 Jahre",
+        "sprachkenntnisse": "Deutsch, Englisch",
+        "bewertungen": "Sehr gut",
+        "photoUrl": "https://via.placeholder.com/150"
+      }
+    ],
+    "appointments": [],
+    "schedules": [],
+    "available-slots": [
+      {
+        "date": "01/08/2024",
+        "dayOfWeek": "Montag",
+        "time": "09:00",
+        "doctorId": 1,
+        "insurance": "Gesetzlich versichert"
+      },
+      {
+        "date": "01/08/2024",
+        "dayOfWeek": "Montag",
+        "time": "10:00",
+        "doctorId": 1,
+        "insurance": "Privat versichert"
+      }
+      
+    ]
+  }
+  

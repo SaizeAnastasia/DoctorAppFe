@@ -1,0 +1,104 @@
+/* Login.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: auto !important;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.container h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрирование кнопок и других элементов по горизонтали */
+}
+
+label {
+  margin-bottom: 15px;
+  width: 100%; /* Растягивает label на всю ширину формы */
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.password-container {
+  position: relative;
+  width: 100%; /* Растягивает контейнер для пароля на всю ширину формы */
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  text-align: left;
+  width: 100%;
+}
+
+.login-button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+.forgot-password-link {
+  margin-top: 15px;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.forgot-password-link:hover {
+  text-decoration: underline;
+}
+
+.signup-link {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.signup-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
